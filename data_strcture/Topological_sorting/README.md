@@ -35,7 +35,7 @@ public:
 
 ### Implementation of topological sort
 
-#####Main idea
+##### Main idea
 
 First find the point with a degree of 0 and push it into the stack. When it is out of the stack, print it out and reduce the degree of all subsequent nodes by one. At the same time, check the degree of subsequent nodes. If the degree of input is equal to 0, then go to the next stack and repeat the above steps until all nodes are printed.
 
@@ -97,7 +97,7 @@ void TopGraph::topological_sort() {
 }
 ```
 
-####Output
+#### Output
 
 <img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191128082555568.png" alt="image-20191128082555568" style="zoom:50%;" />
 
