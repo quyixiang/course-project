@@ -99,6 +99,6 @@ void TopGraph::topological_sort() {
 
 #### Output
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191128082555568.png" alt="image-20191128082555568" style="zoom:50%;" />
+![output](./output.png)
 
 Among them, each line indicates the courses that can be taken at the same time, that is to say, it can be completed as soon as 4 semesters.
