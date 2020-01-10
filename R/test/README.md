@@ -125,7 +125,7 @@ for (i in 1:10){
 
 ###### 结果
 
-![image-20191217103356515](/Users/quyixiang/Library/Application Support/typora-user-images/image-20191217103356515.png)
+![image-20191217103356515](./test_1.png)
 
 #### 3.Colorectal cancer (CRC) is the third most common cancer worldwide and the fourth leading cause of cancer-related deaths. Recent studies of the genomic, transcriptomic, and proteomic landscapes of human CRC have identified many biological discoveries. However, the rapidly accumulating omics data have yet to bring novel biomarker and drug targets to the public. So researchers collected tumor specimens and matched normal adjacent tissues from some colon cancer patients. Next they performed wholeexome sequencing, copy-number array, RNA sequencing and microRNA sequencing, and label-free shotgun proteomic analyses of these samples. Table 4 and Table 5 are the log-ratio normalized proteome expression data in all tumors and matched normal adjacent tissues. (alpha = 0.05)
 
@@ -242,15 +242,15 @@ ggplot(dt, aes(x = "", y = A, fill = B)) +
 
 
 
-![image-20191218183128185](/Users/quyixiang/Library/Application Support/typora-user-images/image-20191218183128185.png)
+![image-20191218183128185](./test_2.png)
 
 ###### paired t-test
 
-![image-20191218183233601](/Users/quyixiang/Library/Application Support/typora-user-images/image-20191218183233601.png)
+![image-20191218183233601](./test_3.png)
 
 ###### 对比
 
-![image-20191218183259293](/Users/quyixiang/Library/Application Support/typora-user-images/image-20191218183259293.png)
+![image-20191218183259293](./test_4.png)
 
 ####4. Use the breast cancer dataset Table 2 and Table 3. Randomly take 20 samples of each subtypes (namely luminal A, luminal B, HER2 enriched and basal-like types) separately. ($\alpha = 0.1$)
 
@@ -351,9 +351,7 @@ for(i in finalrank$hugo_symbol){
 finalrank
 ```
 
-###### 输出
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191213221012658.png" alt="image-20191213221012658" style="zoom:80%;" />
 
 #### 5. Use the breast cancer dataset Table 2 and Table 3. It was reported that the frequency of luminal A, luminal B, HER2 enriched and basal-like subtypes in all invasive breast cancers are 35%,25%,20%,20%. (alpha = 0.05)
 
@@ -391,8 +389,6 @@ ggplot()+
   scale_fill_manual(values = c('#307e13','#006699'))+
   coord_flip()
 ```
-
-![image-20191215102102769](/Users/quyixiang/Library/Application Support/typora-user-images/image-20191215102102769.png)
 
 ##### (2) Test whether the observed frequency distribution following 35%, 25%, 20%, 20%. ``Chi-Square goodness-of-fit test``
 

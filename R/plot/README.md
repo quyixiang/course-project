@@ -85,7 +85,7 @@ plot_boxplot +
 
 ###### 结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191119171623003.png" alt="image-20191119171623003" style="zoom:50%;" />
+<img src="./plot_1.png" alt="image-20191119171623003" style="zoom:50%;" />
 
 ### 第三题
 
@@ -139,7 +139,7 @@ ggplot(data = NULL)+
 
 ###### 结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191119152058463.png" alt="image-20191119152058463" style="zoom:67%;" />
+<img src="./plot_2.png" alt="image-20191119152058463" style="zoom:67%;" />
 
 如图所示，橙色部分代表拒绝域，红线代表本题中两个均值的差值，未落在拒绝域内，故而无法拒绝原假设
 
@@ -193,7 +193,7 @@ print(r_description)
 
 ###### 结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191119111813570.png" alt="image-20191119111813570" style="zoom:50%;" />
+<img src="./plot_3.png" alt="image-20191119111813570" style="zoom:50%;" />
 
 #### 4.Use violin plot to show the MC4R expression value in two groups.
 
@@ -234,7 +234,7 @@ ggplot(v, aes(1, MC4R, fill = classification)) + geom_split_violin() +
 
 ##### 结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191119160504781.png" alt="image-20191119160504781" style="zoom:80%;" />
+<img src="./plot_4.png" alt="image-20191119160504781" style="zoom:80%;" />
 
 
 
@@ -261,7 +261,7 @@ Control组的平均值为999.48
 
 R中其他descriptive statistics对其的描述
 
-![image-20191119223250642](/Users/quyixiang/Library/Application Support/typora-user-images/image-20191119223250642.png)
+![image-20191119223250642](./plot_5.png)
 
 ####2.Randomly take 50 control samples, compute the mean of SWAP70 genes.
 
@@ -332,7 +332,7 @@ $pvalue\_70=0.715>0.05$，故而差异不显著
 
 $pvalue\_80=0.822>0.05$，故而差异不显著
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191120095712434.png" alt="image-20191120095712434" style="zoom:50%;" />
+<img src="./plot_6.png" alt="image-20191120095712434" style="zoom:50%;" />
 
 
 
@@ -370,9 +370,7 @@ summary(genes_in_control$brca_contrl_mean)
 summary(genes_in_tumor$brca_tumor_mean)
 ```
 
-###### 结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191120102342532.png" alt="image-20191120102342532" style="zoom:80%;" />
 
 #### 3.For those genes in step 2, is there a difference of their mean of FPKM in two different conditions (control vs tumor). Use alpha = 0.05
 
@@ -389,7 +387,7 @@ t.test(same_contrl_genes$Mean,same_tumor_genes$Mean,paired = T,alternative = 'tw
 
 ###### 结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191120102742478.png" alt="image-20191120102742478" style="zoom:80%;" />
+<img src="./plot_7.png" alt="image-20191120102742478" style="zoom:80%;" />
 
 #### 4.Draw the error bar plot of the mean of FPKM in two different conditions (control vs tumor) and label pvalue in the graph.
 
@@ -412,7 +410,7 @@ ggplot(data = mydf5_4, aes(x = as.factor(Type), y = mydf5_4$Mean,fill=as.factor(
 
 ###### 结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191120105304227.png" alt="image-20191120105304227" style="zoom:80%;" />
+<img src="./plot_8.png" alt="image-20191120105304227" style="zoom:80%;" />
 
 ###第六题
 
@@ -434,25 +432,11 @@ print(describe(breast))
 print(describe(cervical))
 ```
 
-###### 结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191120112325179.png" alt="image-20191120112325179" style="zoom:50%;" />
 
-#### 2.Try to judge whether the value of PDGFD FPKM is equal variance in the two forms of cancers.
 
-######Code
 
-```R
-var.test(breast,cervical)
-```
-
-###### 结果
-
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191120141621575.png" alt="image-20191120141621575" style="zoom:70%;" />
-
-因此方差并不相等
-
-#### 3.Try to judge whether there is difference of PDGFD expression in the two forms of cancer. Use alpha = 0.05
+#### 2.Try to judge whether there is difference of PDGFD expression in the two forms of cancer. Use alpha = 0.05
 
 ###### Code
 
@@ -462,15 +446,15 @@ t.test(breast,cervical)
 
 ######结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191120142031273.png" alt="image-20191120142031273" style="zoom:50%;" />
+<img src="./plot_9.png" alt="image-20191120142031273" style="zoom:50%;" />
 
 因此两个均值并不相等
 
-#### 4.Draw the error bar plot of PDGFD expression in the two forms of cancer, and label pvalue in the graph.
+#### 3.Draw the error bar plot of PDGFD expression in the two forms of cancer, and label pvalue in the graph.
 
 ###### Code
 
-$\begin{array}{l}{p=\left(\begin{array}{c}{a+b} \\ {a}\end{array}\right)\left(\begin{array}{c}{c+d} \\ {c}\end{array}\right) /\left(\begin{array}{c}{n} \\ {a+c}\end{array}\right)} \\ {=\frac{(a+b) !(c+d) !(a+c) !(b+d) !}{n ! a ! b ! c ! d !}}\end{array}$
+$\begin{array}{l}{p=\left(\begin{array}{c}{a+b} \\ {a}\end{array}\right)\left(\begin{array}{c}{c+d} \\ {c}\end{array}\right) /\left(\begin{array}{c}{n} \\ {a+c}\end{array}\right)} {=\frac{(a+b) !(c+d) !(a+c) !(b+d) !}{n ! a ! b ! c ! d !}}\end{array}$
 
 ```R
 mean_brca_PDGFD<-mean(breast)
@@ -520,5 +504,5 @@ text(x=(bar_plot[1]+bar_plot[2])/2, y=275,
 
 ###### 结果
 
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191120162300255.png" alt="image-20191120162300255" style="zoom:50%;" />
+<img src="./plot_10.png" alt="image-20191120162300255" style="zoom:50%;" />
 
