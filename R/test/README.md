@@ -248,9 +248,9 @@ ggplot(dt, aes(x = "", y = A, fill = B)) +
 
 ![image-20191218183259293](./test_4.png)
 
-####4. Use the breast cancer dataset Table 2 and Table 3. Randomly take 20 samples of each subtypes (namely luminal A, luminal B, HER2 enriched and basal-like types) separately. ($\alpha = 0.1$)
+#### 4. Use the breast cancer dataset Table 2 and Table 3. Randomly take 20 samples of each subtypes (namely luminal A, luminal B, HER2 enriched and basal-like types) separately. ($\alpha = 0.1$)
 
-#####(1) Use Kruskal-Wallis test to check the genes expressed differentially among the subtypes. ``Kruskal-Wallis test``
+##### (1) Use Kruskal-Wallis test to check the genes expressed differentially among the subtypes. ``Kruskal-Wallis test``
 
 ###### （a）选出需要的组的基因表达量
 
