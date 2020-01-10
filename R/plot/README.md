@@ -331,7 +331,7 @@ $pvalue\_80=0.822>0.05$，故而差异不显著
 
 #### 1.Measure the average FPKM of each gene in control samples and tumor samples. Sort the gene according to the mean of FPKM from big to small in control samples and tumor samples separately.
 
-######Code
+###### Code
 
 ```R
 brca_tumor <- read.table('/Users/quyixiang/Desktop/生物统计/lab/lab4/brca-rsem-fpkm-tcga-t-lab.txt',header = T)
@@ -346,7 +346,7 @@ brca_tumor_mean <- brca_tumor_mean[order(brca_tumor_mean$brca_tumor_mean,decreas
 
 #### 2.Extract the same genes in control samples and tumor samples from top 500 genes according to the order in step 1. Use descriptive statistics in R to describe the expression value of extracted genes in two groups.
 
-######Code
+###### Code
 
 ```R
 genes_in_control <- as.vector(head(brca_contrl_mean,500))
@@ -361,7 +361,7 @@ summary(genes_in_tumor$brca_tumor_mean)
 
 #### 3.For those genes in step 2, is there a difference of their mean of FPKM in two different conditions (control vs tumor). Use alpha = 0.05
 
-######Code
+###### Code
 
 ```R
 same_contrl_genes <- data.frame(same_contrl_genes,Type = 'Normal')
@@ -378,7 +378,7 @@ t.test(same_contrl_genes$Mean,same_tumor_genes$Mean,paired = T,alternative = 'tw
 
 #### 4.Draw the error bar plot of the mean of FPKM in two different conditions (control vs tumor) and label pvalue in the graph.
 
-######Code
+###### Code
 
 ```R
 library(ggplot2)
@@ -399,7 +399,7 @@ ggplot(data = mydf5_4, aes(x = as.factor(Type), y = mydf5_4$Mean,fill=as.factor(
 
 <img src="./plot_8.png" alt="image-20191120105304227" style="zoom:80%;" />
 
-###第六题
+### 第六题
 
 #### 1.Please measure the mean and variance of PDGFD FPKM in breast cancer and cervical cancer separately. And use other descriptive statistics in R to describe the FPKM of PDGFD gene.
 
@@ -431,7 +431,7 @@ print(describe(cervical))
 t.test(breast,cervical)
 ```
 
-######结果
+###### 结果
 
 <img src="./plot_9.png" alt="image-20191120142031273" style="zoom:50%;" />
 
