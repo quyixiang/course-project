@@ -57,11 +57,7 @@ z<-z.test(sample,alternative = "two.sided",
 z
 ```
 
-###### 结果
-
-<img src="/Users/quyixiang/Library/Application Support/typora-user-images/image-20191119165836010.png" alt="image-20191119165836010" style="zoom:120%;" />
-
-$1111.526\in[1042.166,1180.886]$,故而不能拒绝原假设
+不能拒绝原假设
 
 #### 4.Repeat steps 2 and 3 above two times, and compare the three results, use graph toshow the differences if possible.  
 
@@ -95,15 +91,6 @@ plot_boxplot +
 | ---------- | ------------ | ------------ | -------- |
 | 乳腺癌人群 | 400(0.4073)  | 582          | 982      |
 | 非病人群   | 35(0.3181)   | 75           | 110      |
-
-肥胖概率$p=0.398$
-$$
-SE=\sqrt{\frac{p\times(1-p)}{n_1}+\frac{p\times(1-p)}{n_2}}=0.0492
-$$
-
-$$
-Z=\frac{p_1-p_2}{SE}=1.81<1.96
-$$
 
 由于z值比1.96小，所以我们无法拒绝原假设，即认为乳腺癌与肥胖无关
 
@@ -453,8 +440,6 @@ t.test(breast,cervical)
 #### 3.Draw the error bar plot of PDGFD expression in the two forms of cancer, and label pvalue in the graph.
 
 ###### Code
-
-$\begin{array}{l}{p=\left(\begin{array}{c}{a+b} \\ {a}\end{array}\right)\left(\begin{array}{c}{c+d} \\ {c}\end{array}\right) /\left(\begin{array}{c}{n} \\ {a+c}\end{array}\right)} {=\frac{(a+b) !(c+d) !(a+c) !(b+d) !}{n ! a ! b ! c ! d !}}\end{array}$
 
 ```R
 mean_brca_PDGFD<-mean(breast)
