@@ -31,9 +31,9 @@ kurtosis(gene) # 18.34869
 skewness(gene) # 2.294123
 ```
 
-####2.Randomly take 200 tumor samples, compute the mean of KIF1C genes.
+#### 2.Randomly take 200 tumor samples, compute the mean of KIF1C genes.
 
-######Code
+###### Code
 
 ```R
 #samplesize 200
