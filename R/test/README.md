@@ -234,7 +234,7 @@ ggplot(dt, aes(x = "", y = A, fill = B)) +
   theme(axis.text.x = element_blank())
 ```
 
-######Wilcoxon signed rank test
+###### Wilcoxon signed rank test
 
 
 
@@ -311,9 +311,9 @@ diff_gene$hugo_symbol
 write.csv(diff_gene,"diff_gene.csv")
 ```
 
-######最后输出的基因保存在``diff_gene.csv``中
+###### 最后输出的基因保存在``diff_gene.csv``中
 
-#####(2) Do pair-wise comparisons among different subtypes for the top 10 genes with most differential expression (smallest p values). ``Wilcoxon rank sum test``
+##### (2) Do pair-wise comparisons among different subtypes for the top 10 genes with most differential expression (smallest p values). ``Wilcoxon rank sum test``
 
 ```R
 kwtest_sort <- kwtest[order(kwtest$p_value), ]
@@ -353,7 +353,7 @@ finalrank
 
 ##### (1) Investigate the real frequency of subtypes in the breast cancer dataset, and show the results with graph.
 
-######数据预处理
+###### 数据预处理
 
 ```R
 library(ggplot2)
@@ -414,7 +414,7 @@ chitable <- chitable[,-1]
 chitable <- chitable[c(-1,-3),]
 ```
 
-######$\chi^2$检验
+###### chi^2检验
 
 ```R
 chisq.test(chitable)
