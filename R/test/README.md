@@ -85,10 +85,6 @@ gene_different <- colnames(gene_expressions[3:102])[tmp$ix[1:i-1]]
 paste(gene_different,collapse = ",")
 ```
 
-###### 结果
-
-![image-20191214101838287](/Users/quyixiang/Library/Application Support/typora-user-images/image-20191214101838287.png)
-
 ##### (2) Do pair-wised tests for the top 10 genes with most differential expression (smallest p values) ``paired t-test``
 
 ```R
