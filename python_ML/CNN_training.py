@@ -28,17 +28,6 @@ with open(input_path,'r') as fff:
 label = a['Finding Labels'].tolist()
 files_path = a['Image Index'].tolist()
 
-###文件名修复
-#def repair_filename(broken_like_name):
-#    if broken_like_name[:4] == 'tran':
-#        true_name = broken_like_name[:-1]
-#    else:
-#        true_name = broken_like_name
-#    return true_name
-#
-#files_path = [repair_filename(item) for item in files_path]
-###
-
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(files_path, label, test_size=0.3, random_state=42)
 train_file = pd.DataFrame({'Label':y_train,'Path':x_train})
