@@ -19,7 +19,6 @@ aug = ImageDataGenerator(rotation_range=20, zoom_range=0.15,
     width_shift_range=0.2, height_shift_range=0.2, shear_range=0.15,
     horizontal_flip=True, fill_mode="nearest")
 
-####
 import pandas as pd
 input_path = 'label_new1.csv'
 with open(input_path,'r') as fff:
