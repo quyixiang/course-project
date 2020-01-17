@@ -14,4 +14,4 @@ There are two kinds of images in our dataset, effusion and infiltration. There a
 
 ### Output
 
-<img src="../pictures/image-20200117133755040.png" alt="image-20200117133755040" style="zoom: 50%;" />
+<img src="../pictures/image-20200117134303712.png" alt="image-20200117134303712" style="zoom:50%;" />
