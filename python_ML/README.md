@@ -1,6 +1,6 @@
 ## Binary classification of medical image
 
-###Purpose
+### Purpose
 
 Chest radiographs are used to diagnose many conditions involving the chest wall, including its bones, and also structures contained including the lungs, heart, and great vessels. However, it may be really difficult for doctors to classify the images. So it is really important for us to develop a deep learning algorithm to achieve the automatic diagnosis using CNN.
 
