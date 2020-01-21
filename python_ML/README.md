@@ -12,9 +12,13 @@ There are two kinds of images in our dataset, effusion and infiltration. There a
 <div align=center>
 <img width="600" src="../pictures/image-20200117133421155.png"/>
 </div>
+
 ### Output
+
 <div align=center>
 
 <img width="600" src="../pictures/image-20200117134303712.png" alt="image-20200117134303712" style="zoom:50%;" />
 </div>
+
+
 ``AUC:0.76``
