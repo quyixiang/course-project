@@ -9,11 +9,12 @@ Chest radiographs are used to diagnose many conditions involving the chest wall,
 There are two kinds of images in our dataset, effusion and infiltration. There are 203 effusions and 503 infiltrations in our dataset.
 
 ### Structure
-
-![image-20200117133421155](../pictures/image-20200117133421155.png)
-
+<div align=center>
+<img width="600" src="../pictures/image-20200117133421155.png"/>
+</div>
 ### Output
+<div align=center>
 
-<img src="../pictures/image-20200117134303712.png" alt="image-20200117134303712" style="zoom:50%;" />
-
+<img width="600" src="../pictures/image-20200117134303712.png" alt="image-20200117134303712" style="zoom:50%;" />
+</div>
 ``AUC:0.76``
