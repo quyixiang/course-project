@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
-##加入环境变量方便找到module
 import sys
 import os
-rootPath = 'F:\Python2.7\Lib\lib-tk'
-sys.path.append(rootPath)
+
 from ScrolledText import ScrolledText
 from tkFileDialog import askdirectory
 from tkMessageBox import askyesno
@@ -20,7 +18,7 @@ socket.setdefaulttimeout(5)
 class Crawler_plusplus():
     def __init__(self):
         self.rt = tk.Tk()#创建窗口
-        self.rt.title('爬取百度图片并进行图片预处理')#窗口标题
+        self.rt.title('Automatically download pictures')#窗口标题
         self.menu = tk.Menu(self.rt)#在根窗口里创建一个菜单
         self.rt.config(menu=self.menu)#把新创建菜单定为根窗口的菜单
         self.aboutmenu =tk.Menu(self.menu)#在根窗口菜单里创建一个菜单
